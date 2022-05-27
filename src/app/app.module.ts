@@ -13,15 +13,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccueilComponent } from './components/accueil/accueil.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GammeComponent } from './components/gamme/gamme.component';
 
 const routes: Routes = [
   { path: 'accueil', component: AccueilComponent },
   { path: 'contact', component: ContactComponent },
+  { path: 'gamme', component: GammeComponent },
   { path: '', redirectTo: 'accueil', pathMatch: 'full' },
 ];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, AccueilComponent, ContactComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    AccueilComponent,
+    ContactComponent,
+    FooterComponent,
+    GammeComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

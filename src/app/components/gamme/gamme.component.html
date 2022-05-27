@@ -1,0 +1,15 @@
+<p>gamme works!</p>
+
+<ul>
+  <li><a href="https://www.stihl.fr/fr" target="_blank">Website</a></li>
+  <li><a href="mailto:m.bluth@example.com">Email</a></li>
+  <li><a href="tel:+123456789">Phone</a></li>
+</ul>
+
+<h1>Notre gamme</h1>
+
+<div *ngFor="let gamme of gammes">
+  <div>Nom : {{gamme.nom}} </div>
+  <img src="{{gamme.logo}}" alt="{{gamme.logo}}" width="400">
+
+</div>
